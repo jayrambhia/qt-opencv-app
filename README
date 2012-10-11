@@ -1,0 +1,58 @@
+*****************
+* opencv-qt-app *
+*****************
+
+This is an simple QT-OpenCV application. This project is to provide a GUI-framwork for CV applications.
+
+Features:
+
+1. Frame Rate indicator
+2. Memory buffer usage (Useful to find out bottlenecks in-situ)
+3. Camera selection interface
+4. ROI selections
+5. Mouse position indicator
+6. Simple IP based filters (Canny, Erode, Dilate etc)
+7. Multithreaded
+
+Uses:
+
+1. Basic framwork establishment
+2. Easy to edit via QT designer
+3. Showcasing basic IP applications of OpenCv in a pretty framework
+
+
+Requirements:
+
+1. OpenCV 2.*
+2. QT 4
+3. Qmake
+4. QT designer (optional | A good GUI platform to make QT forms)
+	- $ sudo apt-get install qt4-designer 
+			OR
+	- use synaptic
+
+Compilation
+
+ Run the pro file via qmake
+  - $ mkdir release
+	$ cd release
+	$ qmake ..
+	$ make
+	$ ./qt-opencv-multithreaded
+
+			OR
+
+ Run via QT Designer
+	1. Open Project
+	2. Select the .pro file
+	3. click build
+	
+
+
+Issues:
+
+1. Code is not organized ,all in same folder. This is because of my lack experience in make Qmake files. This is my first
+2. Too little OpenCV stuff. Just the basic IP stuff. Please to include more.
+
+AUTHORS:
+Abhinav Gupta
